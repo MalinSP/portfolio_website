@@ -193,25 +193,17 @@
    </script>
 
 <script>
-    const getElement = (selector) => {
-    const element = document.querySelector(selector)
+
+$(".mobile_menu").on("click", function () {
+  $(".nav_links").toggle();
+});
+
+// hide the menu when an exmple is clicked
+$(".nav_link").on("click", function(){
+    $(".nav_links").hide(); 
+});
   
-    if (element) return element
-    throw Error(
-      `Please double check your class names, there is no ${selector} class`
-    )
-  }
-  
-  const links = getElement('.nav_links')
-  const navBtnDOM = getElement('.mobile_menu')
-  
-  navBtnDOM.addEventListener('click', () => {
-    links.classList.toggle('show_links')
-  })
-  
-  const date = getElement('#date')
-  const currentYear = new Date().getFullYear()
-  date.textContent = currentYear
+
 </script>
 
 

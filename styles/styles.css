@@ -446,7 +446,8 @@ a.btn_all:hover {
         align-items: center;
         flex-direction: column;
         overflow: hidden;
-        height: 0;
+        display: none;
+        
     }
     .mobile_menu {
         display: block;
@@ -459,9 +460,6 @@ a.btn_all:hover {
     .nav {
         display: inline;
 }
-    .show_links {
-    height: 450px;
-  }
   .nav_link {
     display: block;
     text-align: center;
@@ -525,6 +523,23 @@ a.btn_all:hover {
     .nav_links li {
     margin-left: 0px;
 }
+    .wrapper .contact_item {
+    padding-right: 35px;
+   
+}
+    .about .wrapper .check {
+    margin-right: 0;
+}
+    .projects_info {
+    justify-content: center;
+}
+    .title_section {
+        text-align: center;
+    }
+    .mobile_menu {
+        padding: 5px 10px;
+        border-radius: 2px;
+    }
 }
 @media only screen and (max-width: 376px) {
     .logo_items .wrapper {
@@ -555,10 +570,13 @@ a.btn_all:hover {
 @media only screen and (max-width: 321px) {
     .project_btn,
     .about_btn {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         margin-right: 0px;
         padding: 10px 20px;
         
+    }
+    .logo_items {
+        margin-top: 0;
     }
     .container {
     text-align: center;
@@ -580,7 +598,7 @@ a.btn_all:hover {
     }
     .thumbnail .btn_view_page, 
     .thumbnail .btn_view_code {
-        padding: 10px 25px;
+        padding: 10px 22px;
     }
     
 
